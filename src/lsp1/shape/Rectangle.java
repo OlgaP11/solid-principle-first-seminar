@@ -1,6 +1,6 @@
 package lsp1.shape;
 
-public class Rectangle {
+public class Rectangle implements Quadraterial {
     private int sideA;
     private int sideB;
 
@@ -25,6 +25,7 @@ public class Rectangle {
         this.sideB = sideB;
     }
 
+    @Override
     public int getArea() {
         return sideA * sideB;
     }

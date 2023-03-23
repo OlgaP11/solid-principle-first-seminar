@@ -1,6 +1,6 @@
 package lsp2.model;
 
-public class Order {
+public class Order implements Orderable{
     private final int price;
     private final int quantity;
 
@@ -8,7 +8,7 @@ public class Order {
         this.price = price;
         this.quantity = quantity;
     }
-
+    @Override
     public int getAmount() {
         return quantity * price;
     }
